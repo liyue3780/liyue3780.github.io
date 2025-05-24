@@ -18,7 +18,7 @@ minimal: false             # use a dark header
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "/cv.pdf", title: "CV"}
   - {title: "Lab", url: "https://picsl.upenn.edu/"}
-  - {title: "Blog", file: "/index.md" }
+  - {title: "Blog", file: "/blog.md" }
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:yue.li@pennmedicine.upenn.edu"}
