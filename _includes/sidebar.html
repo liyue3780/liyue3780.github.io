@@ -5,6 +5,18 @@
   <strong>Yue Li</strong><br>
   Philadelphia, PA
   </div>
+  
+  {%- for item in site.external -%}
+    {%- assign node = site.pages | where: "name", item.file | first -%}
+    {%- assign url = item.url | default: node.url -%}
+    {%- assign title = item.title | default: node.title -%}
+    {%- assign icon = item.icon | default: item.sidebaricon -%}
+    <a aria-label="{{ title }}" href="{{ url | relative_url }}" {% if url == page.url %}class="selected"{% endif %}>
+      <svg aria-hidden="true" class="icon"><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ icon }}"></use></svg>
+      <span aria-hidden="true">{{ title }}</span>
+    </a>
+  {%- endfor -%}
+  
   <nav>
   {%- for item in site.navigation -%}
     {%- assign node = site.pages | where: "name", item.file | first -%}
@@ -16,16 +28,7 @@
       <span aria-hidden="true">{{ title }}</span>
     </a>
   {%- endfor -%}
-  {%- for item in site.external -%}
-    {%- assign node = site.pages | where: "name", item.file | first -%}
-    {%- assign url = item.url | default: node.url -%}
-    {%- assign title = item.title | default: node.title -%}
-    {%- assign icon = item.icon | default: item.sidebaricon -%}
-    <a aria-label="{{ title }}" href="{{ url | relative_url }}" {% if url == page.url %}class="selected"{% endif %}>
-      <svg aria-hidden="true" class="icon"><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ icon }}"></use></svg>
-      <span aria-hidden="true">{{ title }}</span>
-    </a>
-  {%- endfor -%}
+
   </nav>
   <div class="description">{{ site.description }}</div>
 </aside>
