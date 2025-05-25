@@ -15,12 +15,14 @@ minimal: false             # use a dark header
 
 # Menu
 
-navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {title: "Lab", url: "https://picsl.upenn.edu/"}
-
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:yue.li@pennmedicine.upenn.edu"}
   - {title: Github, icon: github, url: "https://github.com/liyue3780"}
+
+navigation:                # accepts {file, title, url, icon, sidebaricon}
+  - {title: "Lab", url: "https://picsl.upenn.edu/"}
+
+
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
