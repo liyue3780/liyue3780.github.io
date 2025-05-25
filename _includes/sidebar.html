@@ -1,5 +1,11 @@
 <link rel="stylesheet" href="{{ "/assets/css/sidebar.css" | relative_url }}" media="screen and (min-width: 70em)">
 <aside style="display: none">
+  <div style="text-align: center; padding: 1rem;">
+  <img src="/assets/img/elephant.png" alt="Profile photo" width="100" style="border-radius: 50%; margin-bottom: 0.5rem;">
+  <strong>Yue Li</strong><br>
+  <a href="mailto:yue.li@pennmedicine.upenn.edu">yue.li@pennmedicine.upenn.edu</a><br>
+  Philadelphia, PA
+  </div>
   <nav>
   {%- for item in site.navigation -%}
     {%- assign node = site.pages | where: "name", item.file | first -%}
