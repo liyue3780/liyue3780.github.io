@@ -14,9 +14,13 @@
     {%- assign icon = item.icon | default: item.sidebaricon -%}
     <div style="margin-bottom: 0.5rem;">
       <a aria-label="{{ title }}" href="{{ url | relative_url }}" style="display: flex; align-items: center; gap: 0.4rem;">
-        <svg aria-hidden="true" class="icon" style="flex-shrink: 0;">
-          <use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ icon }}"></use>
-        </svg>
+        {% if item.image %}
+          <img src="{{ item.image | relative_url }}" alt="{{ title }}" style="width: 1em; height: 1em; vertical-align: middle;">
+        {% else %}
+          <svg aria-hidden="true" class="icon">
+            <use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ icon }}"></use>
+          </svg>
+        {% endif %}
         <span aria-hidden="true">{{ title }}</span>
       </a>
     </div>
