@@ -6,16 +6,22 @@
   <div>Philadelphia, PA</div>
   </div>
   
+<div class="external">
   {%- for item in site.external -%}
     {%- assign node = site.pages | where: "name", item.file | first -%}
     {%- assign url = item.url | default: node.url -%}
     {%- assign title = item.title | default: node.title -%}
     {%- assign icon = item.icon | default: item.sidebaricon -%}
-    <a aria-label="{{ title }}" href="{{ url | relative_url }}" {% if url == page.url %}class="selected"{% endif %}>
-      <svg aria-hidden="true" class="icon"><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ icon }}"></use></svg>
-      <span aria-hidden="true">{{ title }}</span>
-    </a>
+    <div style="margin-bottom: 0.5rem;">
+      <a aria-label="{{ title }}" href="{{ url | relative_url }}" style="display: flex; align-items: center; gap: 0.4rem;">
+        <svg aria-hidden="true" class="icon" style="flex-shrink: 0;">
+          <use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ icon }}"></use>
+        </svg>
+        <span aria-hidden="true">{{ title }}</span>
+      </a>
+    </div>
   {%- endfor -%}
+</div>
   
   <nav>
   {%- for item in site.navigation -%}
