@@ -13,5 +13,11 @@ Before joining UPenn, I got my Ph.D. in Computational Mathematics from Sun Yat-s
 
 ## Publications
 
-- Li, Y., Xie, L., Khandelwal, P., Wisse, L.E., Brown, C.A., Prabhakaran, K., Tisdall, M.D., Mechanic-Hamilton, D., Detre, J.A., Das, S.R. and Wolk, D.A., 2024. [Automatic segmentation of medial temporal lobe subregions in multi-scanner, multi-modality MRI of variable quality](https://www.biorxiv.org/content/10.1101/2024.05.21.595190v1). bioRxiv.
-- Yushkevich, P.A., Ittyerah, R., Li, Y., Denning, A.E., Sadeghpour, N., Lim, S., McGrew, E., Xie, L., DeFlores, R., Brown, C.A. and Wisse, L.E., 2024. [Morphometry of medial temporal lobe subregions using high‐resolution T2‐weighted MRI in ADNI3: Why, how, and what's next?](https://alz-journals.onlinelibrary.wiley.com/doi/full/10.1002/alz.14161). Alzheimer's & Dementia, 20(11), pp.8113-8128.
+### Breast lesion detection in DBT
+
+
+### Alzheimer's disease in vivo imaging biomarker
+
+- **Li, Y.**, Xie, L., Khandelwal, P., Wisse, L.E., Brown, C.A., Prabhakaran, K., Tisdall, M.D., Mechanic‐Hamilton, D., Detre, J.A., Das, S.R. and Wolk, D.A., 2025. [Automatic Segmentation of Medial Temporal Lobe Subregions in Multi‐Scanner, Multi‐Modality Magnetic Resonance Imaging of Variable Quality](https://doi.org/10.1002/hipo.70036). Hippocampus, 35(6), p.e70036.
+- **Li, Y.**, Khandelwal, P., Jena, R., Xie, L., Duong, M., Denning, A.E., Brown, C.A., Wisse, L.E., Das, S.R., Wolk, D.A. and Yushkevich, P.A., 2025. [Achieving detailed medial temporal lobe segmentation with upsampled isotropic training from implicit neural representation](https://arxiv.org/abs/2508.17171). arXiv preprint arXiv:2508.17171.
+- Yushkevich, P.A., Ittyerah, R., **Li, Y.**, Denning, A.E., Sadeghpour, N., Lim, S., McGrew, E., Xie, L., DeFlores, R., Brown, C.A. and Wisse, L.E., 2024. [Morphometry of medial temporal lobe subregions using high‐resolution T2‐weighted MRI in ADNI3: Why, how, and what's next?](https://alz-journals.onlinelibrary.wiley.com/doi/full/10.1002/alz.14161). Alzheimer's & Dementia, 20(11), pp.8113-8128.
