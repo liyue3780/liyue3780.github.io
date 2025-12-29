@@ -20,6 +20,8 @@ external:                  # shows a footer with social links - for available ic
   - {title: Github, icon: github, url: "https://github.com/liyue3780"}
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
+  - {file: "index.md", title: "About me"}
+  - {file: "publications.md", title: "Publications"}
   - {title: "PICSL Lab", url: "https://picsl.upenn.edu/", type: image, image: /assets/img/picsl.png}
 
 
